@@ -1,0 +1,42 @@
+generated: '2026-08-12'
+method: probed
+source: https://www.dermbiont.com/.well-known/
+note: >-
+  Every /.well-known/ discovery path on the only host DermBiont operates
+  (www.dermbiont.com, a Squarespace-hosted corporate site) returned 404. No
+  document was served, so NO WellKnown or SecurityTxt pointer is emitted in
+  apis.yml — this file records a verified absence, not a presence. The
+  /.well-known/security.txt path returns a Squarespace-generated JSON 404 body
+  ({"message":"security.txt not found"}); every other path returns the site's
+  standard HTML 404 shell, which is not a document.
+host: https://www.dermbiont.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+  content_type: application/json
+  served_document: false
+- path: /.well-known/openid-configuration
+  status: 404
+  content_type: text/html
+  served_document: false
+- path: /.well-known/oauth-authorization-server
+  status: 404
+  content_type: text/html
+  served_document: false
+- path: /.well-known/api-catalog
+  status: 404
+  content_type: text/html
+  served_document: false
+- path: /.well-known/ai-plugin.json
+  status: 404
+  content_type: text/html
+  served_document: false
+- path: /.well-known/agent-card.json
+  status: 404
+  content_type: text/html
+  served_document: false
+- path: /.well-known/agent.json
+  status: 404
+  content_type: text/html
+  served_document: false
+hits: 0

@@ -1,7 +1,21 @@
 aid: dermbiont
 name: DermBiont
-description: 'DermBiont is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'DermBiont, Inc. is a Boston, Massachusetts clinical-stage dermatology
+  therapeutics company founded in 2017 that develops targeted topical treatments addressing
+  the root cause of skin disease rather than its symptoms. Its lead program SM-030
+  is a first-in-class topical PKC-beta inhibitor in development for melasma and other
+  hyperpigmentation disorders of the skin, targeting excess melanin production; earlier
+  programs included SM-020 for seborrheic keratosis and the live-bacterial DBI-001
+  and DBI-002 candidates for atopic dermatitis, tinea pedis and onychomycosis. The
+  company describes an in-house discovery platform for microbiome-based therapeutics
+  built on terabytes of DNA sequencing data from human skin samples across healthy
+  individuals and patients, paired with a proprietary computational biology platform
+  that identifies functions gained and lost by the skin microbiome. That computational
+  platform is internal research tooling, not a product: DermBiont sells drug candidates
+  and partnering opportunities, publishes no developer program, no public API, no SDK
+  and no machine-readable API contract of any kind, and its website is a Squarespace-hosted
+  corporate site.'
+image: https://static1.squarespace.com/static/5be33300f93fd46b40da5761/t/629e316bea93f12ec9cc272d/1654534507403/DM-main-logo.png?format=1500w
 url: https://raw.githubusercontent.com/api-evangelist/dermbiont/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +26,16 @@ created: '2026-08-12'
 modified: '2026-08-12'
 tags:
 - Company
+- Biotechnology
+- Pharmaceuticals
+- Dermatology
+- Therapeutics
+- Skin Microbiome
+- Microbiome
+- Drug Discovery
+- Clinical Stage
+- Life Sciences
+- Health
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +43,61 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/dermbiont-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.dermbiont.com/
+- type: About
+  url: https://www.dermbiont.com/overview
+- type: Product
+  url: https://www.dermbiont.com/platform
+- type: Platform
+  url: https://www.dermbiont.com/dermatology-platform
+- type: Pipeline
+  url: https://www.dermbiont.com/pipeline
+- type: Leadership
+  url: https://www.dermbiont.com/leadership
+- type: Contact
+  url: https://www.dermbiont.com/contact-us
+- type: Support
+  url: https://www.dermbiont.com/contact-us
+- type: LinkedIn
+  url: https://www.linkedin.com/company/dermbiont
+- type: Crunchbase
+  url: https://www.crunchbase.com/organization/dermbiont
+- type: LLMsTxt
+  url: llms/dermbiont-llms.txt
+
+x-enrichment:
+  date: '2026-08-12'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: DermBiont is a clinical-stage dermatology drug developer whose only product
+    is the SM-030 topical candidate; its sole web property is a 30-page Squarespace
+    corporate site with no developer, docs or API section anywhere in its sitemap,
+    every OpenAPI, GraphQL, llms.txt and .well-known path returns 404, api.dermbiont.com
+    does not resolve, and no GitHub organization or first-party package exists on any
+    public registry.
+  evidence:
+  - url: https://www.dermbiont.com/openapi.json
+    status: 404
+  - url: https://www.dermbiont.com/graphql
+    status: 404
+  - url: https://www.dermbiont.com/llms.txt
+    status: 404
+  - url: https://www.dermbiont.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.dermbiont.com/.well-known/agent.json
+    status: 404
+  - url: https://www.dermbiont.com/.well-known/security.txt
+    status: 404
+  - url: https://api.github.com/orgs/dermbiont
+    status: 404
+  - url: https://www.dermbiont.com/sitemap.xml
+    status: 200
+  checked: '2026-08-12'

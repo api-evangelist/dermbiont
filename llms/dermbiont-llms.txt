@@ -1,0 +1,41 @@
+# DermBiont
+
+> DermBiont, Inc. is a Boston, Massachusetts clinical-stage dermatology therapeutics
+> company developing targeted topical treatments that address the root cause of skin
+> disease. Its lead program, SM-030, is a first-in-class topical PKC-beta inhibitor
+> for melasma and other hyperpigmentation disorders. DermBiont publishes no public
+> API, SDK, developer portal, or machine-readable API contract.
+
+## About
+
+- [Company overview](https://www.dermbiont.com/overview): Company positioning and the SM-030 program.
+- [Dermatology platform](https://www.dermbiont.com/dermatology-platform): In-house discovery platform for microbiome-based therapeutics, built on DNA sequencing data from human skin samples plus a proprietary computational biology layer. Internal research tooling — not a commercial product and not exposed as an API.
+- [Pipeline](https://www.dermbiont.com/pipeline): Development-stage programs and indications.
+- [SM-030](https://www.dermbiont.com/platform): Lead topical PKC-beta inhibitor for melasma and hyperpigmentation.
+- [Leadership](https://www.dermbiont.com/leadership): Executive team and board of directors.
+- [Contact](https://www.dermbiont.com/contact-us): DermBiont, Inc., 75 Kneeland Street, 14th Fl, Boston, MA 02111.
+
+## Developer surface
+
+DermBiont has no developer surface. As of 2026-08-12 the following were probed on
+www.dermbiont.com, the only host the company operates, and all returned 404:
+`/openapi.json`, `/openapi.yaml`, `/swagger.json`, `/api-docs`, `/docs`, `/graphql`,
+`/llms.txt`, `/.well-known/security.txt`, `/.well-known/openid-configuration`,
+`/.well-known/oauth-authorization-server`, `/.well-known/api-catalog`,
+`/.well-known/ai-plugin.json`, `/.well-known/agent-card.json`, `/.well-known/agent.json`.
+No GitHub organization named `dermbiont` exists (api.github.com/orgs/dermbiont returns
+404), and no first-party client library was found on npm, PyPI, RubyGems, crates.io,
+NuGet, Maven Central, Packagist or pkg.go.dev.
+
+## Notes
+
+- The site is Squarespace-hosted. Its default robots.txt disallows a broad list of AI
+  and training crawlers (GPTBot, ClaudeBot, anthropic-ai, CCBot, Google-Extended,
+  Bytespider, Amazonbot and others) at the user-agent level.
+- The news, blog and press-release sections exist in the sitemap but contain no posts;
+  their Squarespace RSS feeds return 200 with zero items.
+
+---
+generated: 2026-08-12
+method: generated
+source: apis.yml + live probes of https://www.dermbiont.com
