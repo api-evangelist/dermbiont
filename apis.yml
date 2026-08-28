@@ -15,6 +15,17 @@ description: 'DermBiont, Inc. is a Boston, Massachusetts clinical-stage dermatol
   and partnering opportunities, publishes no developer program, no public API, no SDK
   and no machine-readable API contract of any kind, and its website is a Squarespace-hosted
   corporate site.'
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://static1.squarespace.com/static/5be33300f93fd46b40da5761/t/629e316bea93f12ec9cc272d/1654534507403/DM-main-logo.png?format=1500w
 url: https://raw.githubusercontent.com/api-evangelist/dermbiont/refs/heads/main/apis.yml
 x-type: company
