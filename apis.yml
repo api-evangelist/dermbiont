@@ -26,6 +26,18 @@ deliveryModel:
   - none
   generated: '2026-08-28'
   method: derived
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://static1.squarespace.com/static/5be33300f93fd46b40da5761/t/629e316bea93f12ec9cc272d/1654534507403/DM-main-logo.png?format=1500w
 url: https://raw.githubusercontent.com/api-evangelist/dermbiont/refs/heads/main/apis.yml
 x-type: company
